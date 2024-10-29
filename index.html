@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,10 @@
       font-family: "NayAug";
       padding-left: 25px;
       padding-top: 25px;
+      /* Add height: 100% to body class */
+      height: 100%;
+      /* Add these to handle the padding correctly */
+      box-sizing: border-box;
     }
     .footer {
       display: flex;
@@ -31,6 +35,8 @@
     }
     body {
       margin: 0;
+      /* Add height: 100% to body */
+      height: 100%;
     }
     body p {
       margin: 0;
@@ -42,11 +48,29 @@
     }
   </style>
   <body class="NayAug">
-    <h1>Studio Biwako</h1>
-    <p>
-      Studio Biwako is an independent video game development studio consisting
-      of 5 incredibly talented artists.
-    </p>
-    <p>We're excited to share our world with you in 2026.</p>
+    <h1 style="text-align: center">Studio Biwako</h1>
+    <div
+      style="
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      "
+    >
+      <div style="display: flex; justify-content: center">
+        <img
+          src="./image.gif"
+          height="400px"
+          style="border-radius: 20px; border: 2px solid rgba(0, 94, 94, 0.397)"
+        />
+      </div>
+      <p style="text-align: center; padding-top: 20px">
+        Studio Biwako is an independent video game development studio consisting
+        of 5 incredibly talented artists.
+      </p>
+      <p style="text-align: center">
+        We're excited to share our world with you in 2026.
+      </p>
+    </div>
   </body>
 </html>
