@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,65 +12,46 @@
       font-weight: normal;
       font-style: normal;
     }
-    .NayAug {
-      font-family: "NayAug";
-      padding-left: 25px;
-      padding-top: 25px;
-      /* Add height: 100% to body class */
-      height: 100%;
-      /* Add these to handle the padding correctly */
-      box-sizing: border-box;
-    }
-    .footer {
-      display: flex;
-      justify-content: flex-end;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: right;
-    }
-    .footer a {
-      padding-right: 5px;
-    }
     body {
+      font-family: "NayAug";
+      padding: 25px;
       margin: 0;
-      /* Add height: 100% to body */
-      height: 100%;
     }
-    body p {
-      margin: 0;
-      padding-bottom: 10px;
+    ul {
+      margin-top: 20px;
+      padding-left: 40px;
     }
-    body h1 {
-      margin: 0;
-      padding-bottom: 15px;
+    li {
+      padding: 5px 0;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
-  <body class="NayAug">
-    <h1 style="text-align: center">Studio Biwako</h1>
-    <div
-      style="
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      "
-    >
-      <div style="display: flex; justify-content: center">
-        <img
-          src="./image.gif"
-          height="400px"
-          style="border-radius: 20px; border: 2px solid rgba(0, 94, 94, 0.397)"
-        />
-      </div>
-      <p style="text-align: center; padding-top: 20px">
-        Studio Biwako is an independent video game development studio consisting
-        of 5 incredibly talented artists.
-      </p>
-      <p style="text-align: center">
-        We're excited to share our world with you in 2026.
+  <body>
+    <div>
+      <h1>
+        Studio
+        <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank"
+          >Biwako</a
+        >
+      </h1>
+      <p>
+        Studio
+        <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank"
+          >Biwako</a
+        >
+        is a game development studio
       </p>
     </div>
   </body>
 </html>
+
+<!--
+The font used on this site is "Nay Aug," by the lovely Alex Tomlinson: https://alextomlinson.com/
+You can find some of his other fonts here: https://fontsinuse.com/contributors/14002/secretarydesk
+-->
