@@ -14,8 +14,7 @@
     }
     body {
       font-family: "NayAug";
-      padding: 25px;
-      margin: 0;
+      overflow: hidden;
     }
     ul {
       margin-top: 20px;
@@ -32,8 +31,17 @@
       text-decoration: underline;
     }
   </style>
-  <body>
-    <div>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div style="position: absolute; top: 25px; left: 25px">
       <h1>
         Studio
         <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank"
@@ -47,9 +55,9 @@
         >
         is a game development studio
       </p>
-      <video width="100%" controls style="max-width: 400px">
-        <source src="./vid.mp4" type="video/mp4" />
-      </video>
+    </div>
+    <div>
+      <img style="width: 100%; max-width: 500px" src="./car.png" alt="" />
     </div>
   </body>
 </html>
