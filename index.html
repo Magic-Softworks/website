@@ -15,7 +15,14 @@
     body {
       font-family: "NayAug";
       overflow: hidden;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
     }
+    
+    body.fade-out {
+      opacity: 0;
+    }
+    
     ul {
       margin-top: 20px;
       padding-left: 40px;
@@ -55,10 +62,37 @@
         >
         is a game development studio
       </p>
+      <p>
+        <ul>
+          <li><a href="./UntitledVideoGame/UntitledVideoGame.html" class="fade-link">Untitled Video Game</a></li>
+        </ul>
+      </p>
     </div>
     <div>
       <img style="width: 100%; max-width: 500px" src="./car.png" alt="" />
     </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add click event listener to the fade-link
+      const fadeLinks = document.querySelectorAll('.fade-link');
+      
+      fadeLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent default navigation
+          
+          const targetHref = this.getAttribute('href');
+          
+          // Add the fade-out class to the body
+          document.body.classList.add('fade-out');
+          
+          // Wait for the animation to complete before navigating
+          setTimeout(function() {
+            window.location.href = targetHref;
+          }, 1000); // Match this with the CSS transition duration
+        });
+      });
+    });
+  </script>
   </body>
 </html>
 
