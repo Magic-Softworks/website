@@ -1,102 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio Biwako</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @font-face {
+        font-family: "NayAug";
+        src: url("./fonts/NayAug/NayAug2-Regular.ttf")
+          format("truetype");
+      }
+      body {
+        font-family: "NayAug";
+        margin: 0;
+        padding: 0;
+        background-image: url("./background.png");
+        background-repeat: repeat;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: overlay;
+      }
+
+      h1 {
+        font-weight: 400;
+        font-size: 24px;
+        color: black;
+        /* background-image: url("./text.png");
+        background-repeat: repeat;
+        background-position: center center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+      }
+    </style>
+    
+		<link href="./_app/immutable/assets/2.T6MmoDYA.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.5T0ghWbT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Dz-Jk7uT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CtFPmElW.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CsslbzOd.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DFQadqyl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/T30_8MTU.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B6ZOsBrT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ClrS6jjN.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.BJfuWQit.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.Bn6x9nXx.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DQEkxW9q.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BZTXvFOm.js"><!--[--><!--]--><title>Studio Biwako</title>
   </head>
-  <style>
-    @font-face {
-      font-family: "NayAug";
-      src: url("./NayAug2-Regular.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal;
-    }
-    body {
-      font-family: "NayAug";
-      overflow: hidden;
-      opacity: 1;
-      transition: opacity 1s ease-in-out;
-    }
-    
-    body.fade-out {
-      opacity: 0;
-    }
-    
-    ul {
-      margin-top: 20px;
-      padding-left: 40px;
-    }
-    li {
-      padding: 5px 0;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-  <body
-    style="
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    "
-  >
-    <div style="position: absolute; top: 25px; left: 25px">
-      <h1>
-        Studio
-        <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank"
-          >Biwako</a
-        >
-      </h1>
-      <p>
-        Studio
-        <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank"
-          >Biwako</a
-        >
-        is a game development studio
-      </p>
-      <p>
-        <ul>
-          <li><a href="./UntitledVideoGame.html" class="fade-link">Untitled Video Game</a></li>
-        </ul>
-      </p>
-    </div>
-    <div>
-      <img style="width: 100%; max-width: 500px" src="./car.png" alt="" />
-    </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Add click event listener to the fade-link
-      const fadeLinks = document.querySelectorAll('.fade-link');
-      
-      fadeLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault(); // Prevent default navigation
-          
-          const targetHref = this.getAttribute('href');
-          
-          // Add the fade-out class to the body
-          document.body.classList.add('fade-out');
-          
-          // Wait for the animation to complete before navigating
-          setTimeout(function() {
-            window.location.href = targetHref;
-          }, 1000); // Match this with the CSS transition duration
-        });
-      });
-    });
-  </script>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[--><!----><!----><div class="page-wrapper svelte-c8lfut"><div class="main-container svelte-c8lfut"><div class="header-container svelte-c8lfut"><h1>Studio <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank" class="svelte-c8lfut">Biwako</a></h1> <p>Studio <a href="https://en.wikipedia.org/wiki/Lake_Biwa" target="_blank" class="svelte-c8lfut">Biwako</a> is a game development studio</p> <ul class="svelte-c8lfut"><li class="svelte-c8lfut"><a href="/untitled-video-game" class="svelte-c8lfut">Project Michigan</a></li></ul></div> <div class="image-container svelte-c8lfut"><img src="/car.png" alt="Car" class="svelte-c8lfut"></div></div></div><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_14av6q8 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.5T0ghWbT.js"),
+						import("./_app/immutable/entry/app.DFQadqyl.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
   </body>
 </html>
-
-<!--
-The font used on this site is "Nay Aug," by the lovely Alex Tomlinson: https://alextomlinson.com/
-You can find some of his other fonts here: https://fontsinuse.com/contributors/14002/secretarydesk
--->
